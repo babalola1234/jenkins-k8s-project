@@ -12,7 +12,7 @@ pipeline {
     stage('Deploy to K8s') {
       steps {
         withCredentials([file(credentialsId: 'credentials', variable: 'KUBECONFIG')]) {
-          sh 'kubectl --credentials $KUBECONFIG ${action} -f mypod.yml'
+          sh 'kubectl --kubeconfig $KUBECONFIG ${action} -f mypod.yml'
         }
       }
     }
