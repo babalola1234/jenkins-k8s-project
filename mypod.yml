@@ -13,13 +13,7 @@ spec:
     metadata:
       labels:
         app: nginx
-        name: baba
-        managed-by: IT
-        version: 1.14.2
-        component: front-end-webapp
-        part-of: webapps
-        instance: Feb-2026
-        env: dev
+        
     spec:
       containers:
       - name: nginx
