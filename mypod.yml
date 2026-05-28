@@ -18,7 +18,7 @@ spec:
         version: 1.14.2
         component: front-end-webapp
         part-of: webapps
-        instance: Feb 2026
+        instance: Feb-2026
         env: dev
     spec:
       containers:
