@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         app: nginx
-        
     spec:
       containers:
       - name: nginx
@@ -27,10 +26,7 @@ spec:
           requests:
             cpu: 50m
             memory: 50Mi
-
-        
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
@@ -43,4 +39,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-	  NodePort: 30007
+      nodePort: 30007
